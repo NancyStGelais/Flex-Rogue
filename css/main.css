@@ -48,7 +48,7 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 15%;
+	
 	padding: 0;
 	width: 100%;
 	display: flex;
@@ -131,8 +131,9 @@ header nav ul li a {
 .section-one,
 .section-two,
 .section-three {
-	width: 90%;
+	width: 100%;
 	border-top: 1px solid #eee;
+	text-align: left;
 }
 
 .section-one h3 {
@@ -187,11 +188,59 @@ footer span {
 	color: #77a466;
 	font-size: .875em;
 }
-@media screen (min-width: 768px) {
-	​
-	}
-	​
-@media screen (min-width: 1200px) {
-		
-	}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+ .bottom-section {
+	border-top: 1px solid #77a466;
+	border-bottom: 1px solid #77a466;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: row wrap;
+ }
+
+ .bottom-section h3 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: row wrap;
+ }
+
+ .section-one .section-two .section-three {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+ }
+ 
+ .section-one {
 	
+	width: 30%;
+ }
+
+	
+ .section-two {
+	width: 34%;
+	border-left: #77a466 1px solid;
+	border-right: #77a466 1px solid;
+ }
+
+ .section-two h3 {
+	padding-left: 30px;
+ }
+
+ .section-three {
+	width: 30%;
+ }
+
+ .section-three h3 {
+	padding-left: 30px;
+ }
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+ 
+}
